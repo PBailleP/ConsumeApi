@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+{% block javascripts %}
+{{ encore_entry_script_tags('home') }}
+{% endblock %}
+{% block body %}
+    <div class="home-container">
+        <div class="home-carousel">
+            <section class="home-presentation">
+                <h1 class="home-name">Pierre Bailly</h1>
+                <h2 class="home-title">Développeur fullstack</h2>
+                <img class="home-profile-picture" src="{{ asset('build/images/profilePicture.jpg') }}" alt="profile picture"/>
+                <p class="home-description">Petite description ici, petit pitch pour me présenter en 3 lignes</p>
+            </section>
+            <section class="home-cv">
+                <h1>Allo ça carrousse</h1>
+            </section>
+            <section class="home-others">
+                <p>Allo Allo</p>
+            </section>
+        </div>
+    </div>
+{% endblock %}
