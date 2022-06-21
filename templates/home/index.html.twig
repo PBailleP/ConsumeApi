@@ -1,20 +1,45 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Home Pierre Bailly développeur web{% endblock %}
 
 {% block body %}
-    <section class="home-intro">
-        <h1 class="home-name">Pierre Bailly - Carte de développeur</h1>
-        <img class="home-profile-picture" src="{{ asset('build/images/profilePicture.jpg') }}" alt="profile picture"/>
-        <h2 class="home-badge-title">Badges</h2>
-        <div class="home-badges">
-            <img class="logo php-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
-            <img class="logo sf-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
-            <img class="logo mysql-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
-            <img class="logo twig-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
-            <img class="logo js-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
-            <img class="logo html-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
-            <img class="logo css-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
-        </div>
-    </section>
+    <div class="home-container">
+        <section class="home-info">
+            <img class="home-profile-picture" src="{{ asset('build/images/profilePicture.jpg') }}" alt="profile picture"/>
+            <h1 class="home-intro-title">Bio :</h1>
+            <p class="home-intro">Dans le cadre de ma reconversion professionnelle
+                Dans le cadre de ma reconversion professionnelle Dans le cadre de ma reconversion professionnelle
+                Dans le cadre de ma reconversion professionnelle</p>
+            <h1 class="home-infos-title">Infos :</h1>
+            <ul class="home-info-list">
+                <li> 26 ans</li>
+                <li> Permis B, véhiculé</li>
+                <li> mail : pibailly23@gmail.com</li>
+                <li> Disponible à partir du 16 août 2022</li>
+            </ul>
+        </section>
+        <section class="home-skills">
+            <h2 class="home-name">Pierre Bailly - Carte de développeur</h2>
+            <h2 class="home-badge-title">Badges compétences :</h2>
+            <div class="home-badges">
+                <img class="logo php-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
+                <img class="logo sf-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
+                <img class="logo mysql-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
+                <img class="logo twig-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
+                <img class="logo js-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
+                <img class="logo html-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
+                <img class="logo css-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
+            </div>
+            <h2 class="home-badge-title">Badges qualités :</h2>
+            <div class="home-badges">
+                <img class="logo php-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
+                <img class="logo sf-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
+                <img class="logo mysql-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
+                <img class="logo twig-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
+                <img class="logo js-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
+                <img class="logo html-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
+                <img class="logo css-logo" src="{{ asset('build/images/symfonyLogo.png') }}" alt="profile picture"/>
+            </div>
+        </section>
+    </div>
 {% endblock %}
