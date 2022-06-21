@@ -37,11 +37,31 @@ body, html {
   margin-bottom: 5vh;
 }
 
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .logo {
   width: 5vw;
   margin-top: 1.5vh;
-  margin-bottom: 1.5vh;
   margin-left: 3vw;
+}
+
+.logo-title {
+  margin-left: 3vw;
+  color: black;
+}
+
+.logo-container:hover>.logo {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.logo-container:hover>.logo-title {
+  color: red;
+  transition: 0.3s;
 }
 
 .home-info {
