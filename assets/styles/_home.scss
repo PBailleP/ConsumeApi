@@ -1,11 +1,3 @@
-body, html {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  background-color: #2e3136;
-  color: aquamarine;
-}
-
 .home-container {
   display: flex;
   flex-direction: row-reverse;
@@ -19,7 +11,9 @@ body, html {
 
 .home-name {
   text-align: center;
-  margin: 5vh auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
 }
 
 .home-badge-title {

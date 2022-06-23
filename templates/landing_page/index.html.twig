@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pierre Bailly développeur web developer{% endblock %}
+
+{% block body %}
+    <div class="landing-page-container">
+        <section class="intro-title">
+             <h1 class="hello">Hello, <br> I'm Pierre.</h1>
+            <h2 class="work-title">Web developer</h2>
+            <p class="intro">I'm currently looking for a new adventure <br> working remotely or around Nantes as a web developer.</p>
+            <div class="navbar-like-container">
+                <button class="nav-button"><a href="{{ path('app_poke') }}">Search</a></button>
+                <button class="nav-button"><a href="{{ path('app_poke') }}">List</a></button>
+                <button class="nav-button"><a href="{{ path('app_poke') }}">Team</a></button>
+                <button class="nav-button"><a href="{{ path('app_poke') }}">Other</a></button>
+            </div>
+        </section>
+        <section class="info-cards">
+            <button class="contact-me intro-button">Contact me</button>
+            <button class="know-me intro-button">Get to know me</button>
+            <button class="my-skills intro-button">What can I do</button>
+        </section>
+    </div>
+{% endblock %}

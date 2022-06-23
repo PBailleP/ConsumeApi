@@ -1,0 +1,68 @@
+body {
+  background-image: url('/assets/images/Scene-7.jpg');
+  background-size: cover;
+}
+
+.landing-page-container {
+  display: flex;
+}
+
+.intro-title {
+  margin-left: 5vw;
+  width: 30vw;
+}
+
+.hello {
+  font-size: 5rem;
+}
+
+.navbar-like-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 16vw;
+  margin-top: 10vh;
+}
+
+.nav-button {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  border: solid #FFFFFF 2.5px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  height: 4vh;
+  margin-bottom: 4vh;
+  margin-left: 2vw;
+  text-align: center;
+  width: 5vw;
+}
+
+.nav-button:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+  border: solid chocolate;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3vw;
+  margin-top: 30vh;
+  width: 50vw;
+}
+
+.intro-button {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  border: solid #FFFFFF 2.5px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  height: 45vh;
+  width: 15vw;
+}
+
+.intro-button:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+  border: solid chocolate;
+}
