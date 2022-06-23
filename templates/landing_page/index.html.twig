@@ -1,7 +1,10 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Pierre Bailly développeur web developer{% endblock %}
-
+{% block javascripts %}
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+{% endblock %}
 {% block body %}
     <div class="landing-page-container">
         <section class="intro-title">
@@ -16,9 +19,24 @@
             </div>
         </section>
         <section class="info-cards">
-            <button class="contact-me intro-button">Contact me</button>
-            <button class="know-me intro-button">Get to know me</button>
-            <button class="my-skills intro-button">What can I do</button>
+            <div class="contact-me intro-button" id="contact-me">
+                <div class="card-type">
+                    <p class="type-text">Item</p>
+                </div>
+                Contact me <ion-icon name="mail-unread-outline"></ion-icon>
+            </div>
+            <div class="know-me intro-button" id="know-me">
+                <div class="card-type">
+                    <p class="type-text">Trainer</p>
+                </div>
+                Get to know me <ion-icon name="finger-print-outline"></ion-icon>
+            </div>
+            <div class="my-skills intro-button" id="my-skills">
+                <div class="card-type">
+                    <p class="type-text">Skills</p>
+                </div>
+                What can I do <ion-icon name="newspaper-outline"></ion-icon>
+            </div>
         </section>
     </div>
 {% endblock %}
