@@ -37,9 +37,9 @@ body {
 }
 
 .nav-button:hover {
+  border: solid chocolate;
   transform: scale(1.2);
   transition: 0.3s;
-  border: solid chocolate;
 }
 
 .info-cards {
@@ -71,8 +71,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .icon {
   font-size: 3rem;
+  margin-top: 5vh;
+}
+
+.card-desc {
+  margin-top: 5vh;
 }
