@@ -1,5 +1,5 @@
 body {
-  background-image: url('/assets/images/Scene-7.jpg');
+  background-image: url('../images/Scene-7.jpg');
   background-size: cover;
 }
 
@@ -83,4 +83,10 @@ body {
   margin-top: 0;
   text-align: center;
   -webkit-background-clip: text;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Pierre Bailly développeur web{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
@@ -14,6 +14,23 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+            <div class="toggleWrapper">
+                <input type="checkbox" class="dn" id="dn"/>
+                <label for="dn" class="toggle">
+                    <span class="toggle__handler">
+                    <span class="crater crater--1"></span>
+                    <span class="crater crater--2"></span>
+                    <span class="crater crater--3"></span>
+                    </span>
+                    <span class="star star--1"></span>
+                    <span class="star star--2"></span>
+                    <span class="star star--3"></span>
+                    <span class="star star--4"></span>
+                    <span class="star star--5"></span>
+                    <span class="star star--6"></span>
+                </label>
+            </div>
+        {% endblock %}
     </body>
 </html>
