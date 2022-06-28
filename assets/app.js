@@ -11,11 +11,12 @@ import './styles/app.scss';
 // start the Stimulus application
 import './bootstrap';
 
+import './landing';
+
 let checkBoxDarkMode = document.getElementById('dn');
 console.log("hello");
 checkBoxDarkMode.addEventListener('change', function() {
     if (this.checked) {
-        console.log("coucou");
         document.body.style.backgroundImage = "url('/build/images/darkback.e0d9adbe.jpg')";
         document.body.style.color = "#FFFFFF"
     } else {
